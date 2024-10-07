@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin:     0px;
+    padding:    0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    padding-top: 64px; /** for header */
+}
+
+#header {
+    height:     64px;
+    padding:    12px 10%;
+
+    color:      #ffffff;
+    background: #8888aa;
+
+    position:   fixed;
+    top:        0px;
+    width:      100%;
+
+    display:            flex;
+    align-items:        center;
+    justify-content:    space-between;
+
+    a {
+        color:              #eeeeee;
+        text-decoration:    none;
+    }
+
+    img {
+        height: 100%;
+    }
+
+    #nav-bar {
+        :nth-child(n+2) {
+            margin: 0px 0px 0px 12px;
+        }
+    }
+}
+
+@media only screen and (min-width: 860px) {
+    #header {
+        padding:    12px 20%;
+    }
+}
+
+section {
+    margin:     24px auto;
+
+    width:      90%;
+    max-width:  720px;
+}
+
+video {
+    display:    block;
+    margin:     auto;
+
+    width:      90%;
+    max-width:  720px;
+
+    border-radius:  6px;
+}
+
+#video-ref {
+    margin:     auto;
+    padding:    0px 6px;
+
+    width:      90%;
+    max-width:  720px;
+
+    a {
+        color:              #8888aa;
+        text-decoration:    none;
+    }
+}
+
+#form {
+    display:        flex;
+    flex-direction: column;
+
+    width:          90%;
+    max-width:      720px;
+
+    margin:         auto;
+
+    input, textarea {
+        height:         2rem;
+
+        Border-radius:  6px;
+        border:         1px solid gray;
+        
+        padding:        6px;
+    }
+
+    :nth-child(n+2) {
+        margin: 12px 0px 0px 0px;
+    }
+}
